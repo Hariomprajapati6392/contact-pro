@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+
+}
+
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

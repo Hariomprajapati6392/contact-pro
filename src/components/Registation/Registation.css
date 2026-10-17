@@ -1,0 +1,213 @@
+.registation-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #eef2ff, #f5f3ff, #ede9fe);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.registation-form {
+    width: 100%;
+    max-width: 380px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;
+    background: #ffffff;
+    border: 1px solid #e9e5ff;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(79, 70, 229, 0.10);
+    transition: box-shadow 0.3s ease;
+}
+
+.registation-form:hover {
+    box-shadow: 0 16px 40px rgba(79, 70, 229, 0.15);
+}
+
+
+.registation-form h5 {
+    font-size: 27px;
+    text-align: center;
+    color: #312e81;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.form-subtitle {
+    margin: -8px 0 8px;
+    text-align: center;
+    color: #88869d;
+    font-size: 14px;
+}
+
+
+.registation-form .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.registation-form .input-group label {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+
+}
+
+
+.registation-form .input-group input {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 0 12px;
+    color: #1f2937;
+    background: #fafaff;
+    border: 1px solid #dedcf0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.registation-form .input-group input::placeholder {
+    color: #aaa8bc;
+}
+
+
+.registation-form .input-group input:focus {
+    background: #ffffff;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
+}
+
+.registation-btn {
+    width: 100%;
+    margin-top: 4px;
+}
+
+
+.registation-btn button {
+    width: 100%;
+    min-height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: #6d5ce8;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(109, 92, 232, 0.16);
+    transition: background 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.registation-btn button svg {
+    height: 16px;
+    width: 20px;
+}
+
+.registation-btn button:hover {
+    background: #5947d6;
+    box-shadow: 0 7px 16px rgba(109, 92, 232, 0.25);
+    transform: translateY(-2px);
+}
+
+
+.registation-btn button:active {
+    transform: scale(0.98);
+}
+
+
+.registation-form button:focus-visible {
+    outline: 3px solid #b7aaff;
+    outline-offset: 3px;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.password-container input {
+    border: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+
+}
+
+.password-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 12px;
+    background: #fafaff;
+    border: 1px solid #dedcf0;
+    border-radius: 8px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+
+.password-container:focus-within {
+    background: #fafaff;
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.10);
+
+}
+
+
+
+.password-container .toggle-password {
+    flex-shrink: 0;
+    padding: 7px 2px;
+    border: none;
+    background: #fafaff;
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.password-container .toggle-password svg {
+    height: 17px;
+    width: 17px;
+}
+
+
+@media (max-width: 480px) {
+    .registation-container {
+        padding: 20px 15px;
+    }
+
+    .registation-form {
+        max-width: 350px;
+        padding: 24px 20px;
+        gap: 15px;
+    }
+
+    .registation-form h5 {
+        font-size: 23px;
+    }
+
+    .registation-form .input-group input {
+        height: 40px;
+    }
+
+    .registation-btn button {
+        font-size: 13px;
+    }
+}

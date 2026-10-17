@@ -1,0 +1,235 @@
+.contactForm-container {
+    width: 100%;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+    background: #f8fafc;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* =========================
+   Contact Form
+========================= */
+
+.contact-form {
+    width: 420px;
+    height: auto;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08),
+        0 2px 8px rgba(15, 23, 42, 0.04);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.contact-form h5 {
+    width: 100%;
+    margin: 0 0 5px;
+    padding: 0;
+
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+
+    color: #111827;
+}
+
+
+/* =========================
+   Input Group
+========================= */
+
+.input-group {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+/* Label */
+
+.input-group label {
+    padding: 0;
+
+    color: #374151;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   Inputs
+========================= */
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 9px 12px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    color: #111827;
+    background: #ffffff;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+
+/* Input & Select Height */
+
+.input-group input,
+.input-group select {
+    height: 40px;
+}
+
+
+/* Textarea */
+
+.input-group textarea {
+    height: 70px;
+
+    resize: none;
+
+    line-height: 1.4;
+}
+
+
+/* Placeholder */
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* Hover */
+
+.input-group input:hover,
+.input-group select:hover,
+.input-group textarea:hover {
+    border-color: #9ca3af;
+}
+
+
+/* Focus */
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   Save Button
+========================= */
+
+.save-contact-conatiner {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4px;
+}
+
+
+.save-contact-conatiner button {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.20);
+
+    transition: 0.2s ease;
+}
+
+
+/* Hover */
+
+.save-contact-conatiner button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+}
+
+
+/* Active */
+
+.save-contact-conatiner button:active {
+    background: #1e40af;
+    transform: translateY(0);
+}
+
+
+/* 
+
+@media (max-width: 700px) {
+
+    .contactForm-container {
+        height: calc(100vh - 70px);
+        padding: 15px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 420px;
+        padding: 20px;
+    }
+
+} */
+

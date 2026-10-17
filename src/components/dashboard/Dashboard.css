@@ -1,0 +1,226 @@
+.admin-panel {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+
+.dashboard-main {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+
+.contacts-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+
+}
+
+.contacts-heading h2 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 26px;
+}
+
+.contacts-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.contact-count {
+  padding: 9px 14px;
+  background-color: #eef2ff;
+  color: #4338ca;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+.contacts-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,
+      minmax(min(100%, 250px), 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.contact-card {
+  min-width: 0;
+  padding: 22px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.contact-avatar {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef2ff;
+  color: #4f46e5;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.contact-category {
+  padding: 6px 10px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.contact-name {
+  margin: 0 0 18px;
+  color: #1e293b;
+  text-transform: capitalize;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  min-width: 0;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.contact-details p svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  color: #6366f1;
+}
+
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  color: #4338ca;
+  background-color: #eef2ff;
+  border: 1px solid #e0e7ff;
+}
+
+.edit-btn:hover {
+  background-color: #e0e7ff;
+}
+
+.delete-btn {
+  color: #dc2626;
+  background-color: #fff1f2;
+  border: 1px solid #ffe4e6;
+}
+
+.delete-btn:hover {
+  background-color: #ffe4e6;
+}
+
+
+.empty-contacts {
+  padding: 55px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+}
+
+.empty-contacts h3 {
+  margin: 0 0 10px;
+  color: #334155;
+}
+
+.empty-contacts p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+@media (max-width: 520px) {
+  .dashboard-main {
+    padding: 20px 14px;
+  }
+
+  .contacts-heading div {
+    margin-top: 10px;
+
+  }
+
+  .contacts-heading h2 {
+    font-size: 22px;
+  }
+
+  .contacts-heading p {
+    font-size: 13px;
+  }
+
+  .contacts-grid {
+    gap: 15px;
+  }
+
+  .contact-card {
+    padding: 18px;
+  }
+}
