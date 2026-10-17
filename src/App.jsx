@@ -33,8 +33,16 @@ const routers = createBrowserRouter([
     {
         path: "/updatecontact",
         element: <UpdateContact />
+    },
+    {
+        path:"*",
+        element:<h4>404 page not found</h4>
     }
-])
+],
+ {
+    basename: "/contact-pro"
+}
+)
 
 
 const App = () => {
