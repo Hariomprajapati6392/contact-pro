@@ -95,10 +95,11 @@ app.post("/api/users/login", async (req, res) => {
     
    catch (error) {
     console.error("Login Error:", error);
-    return res.status(500).json({
-      error: "Internal Server Error",
-      success: false,
-    });
+    
+  return res.status(500).json({
+    error: error.message,
+    success: false,
+  });
   }
     
 
