@@ -14,7 +14,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function fetchContacts() {
       try {
-        const url = "https://contact-pro-qy1a.onrender.com/api/contacts";
+        const url = "https://contact-pro-1.onrender.com/api/contacts";
 
         const res = await fetch(url, {
           method: "GET",
@@ -56,7 +56,7 @@ const Dashboard = () => {
 
   async function deleteContact(Id) {
     try {
-      const url = `https://contact-pro-qy1a.onrender.com/api/contacts/delete/${Id}`;
+      const url = `https://contact-pro-1.onrender.com/api/contacts/delete/${Id}`;
 
       const res = await fetch(url, {
         method: "delete",

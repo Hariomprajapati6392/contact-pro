@@ -39,7 +39,7 @@ const [result,setResult]=useState("")
    if(!isValid)return;
    
    try{
-     const url="https://contact-pro-qy1a.onrender.com/api/contacts/add";
+     const url="https://contact-pro-1.onrender.com/api/contacts/add";
      const res=await fetch(url,{
       method:"POST",
        headers: {

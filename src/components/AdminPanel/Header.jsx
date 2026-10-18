@@ -12,7 +12,8 @@ const usenavigate=useNavigate()
       try {
         
         const res = await fetch(
-          " https://contact-pro-qy1a.onrender.com/api/users/me",
+        
+          "https://contact-pro-1.onrender.com/api/users/me",
           { 
             method:"GET",
             credentials: "include" 
@@ -34,7 +35,7 @@ const usenavigate=useNavigate()
 async function handleLogout(){
   try {
         const res = await fetch(
-          " https://contact-pro-qy1a.onrender.com/api/users/logout",
+          "https://contact-pro-1.onrender.com/api/users/logout",
           { 
             method:"GET",
             credentials: "include" 

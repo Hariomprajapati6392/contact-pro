@@ -37,7 +37,7 @@ const UpdateContact = () => {
     if (!isValid) return;
 
     try {
-      const url = `https://contact-pro-qy1a.onrender.com/api/contacts/update/${location.state?.contactId}`;
+      const url = `https://contact-pro-1.onrender.com/api/contacts/update/${location.state?.contactId}`;
       const res = await fetch(url, {
         method: "PUT",
         headers: {

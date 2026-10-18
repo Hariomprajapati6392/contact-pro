@@ -50,16 +50,25 @@ app.post("/api/users/register", async (req, res) => {
 
 app.post("/api/users/login", async (req, res) => {
 
-    const { email, password } = req.body;
-    const result = await getUsersData()
-    const user = result.find((u) => u.email === email)
-    if (!user) {
-        return res.status(400).json({
-            error: "User is not registered. Please register first.",
-            success: false
-        })
-    };
+    try{
+        const { email, password } = req.body;
 
+    if (!email || !password) {
+      return res.status(400).json({
+        error: "Email and password are required",
+        success: false,
+      });
+    }
+     const result = await getUsersData()
+         const user = result.find((u) => u.email === email);
+
+    if (!user) {
+      return res.status(400).json({
+        error: "User is not registered. Please register first.",
+        success: false,
+      });
+    }
+    
     const isMatch = await checkPassword(password, user.password);
     if (!isMatch) {
         return res.status(401).json({ error: 'password not matched!' });
@@ -77,10 +86,21 @@ app.post("/api/users/login", async (req, res) => {
             maxAge: 24 * 60 * 60 * 1000,
         }
     );
-    return res.status(200).json({
-        messageL: 'Logged in successfully!',
-        success: true,
-    })
+     return res.status(200).json({
+      message: "Logged in successfully!",
+      success: true,
+    });
+
+    }
+    
+   catch (error) {
+    return res.status(500).json({
+      error: "Internal Server Error",
+      success: false,
+    });
+  }
+    
+
 })
 
 
