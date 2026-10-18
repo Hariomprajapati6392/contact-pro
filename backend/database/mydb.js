@@ -38,7 +38,7 @@ function getUsersData() {
     return new Promise((resolve, reject) => {
         const sql = "select * from users";
         con.query(sql, (err, result) => {
-            if (err) return reject(err.message);
+            if (err) return reject(err);
             resolve(result);
         })
     })
