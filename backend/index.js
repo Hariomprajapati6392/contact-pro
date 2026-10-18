@@ -7,7 +7,7 @@ import "dotenv/config";
 const app = express();
 
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://hariomprajapati6392.github.io",
     credentials: true,
 }))
 
