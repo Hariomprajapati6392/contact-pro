@@ -9,7 +9,7 @@ const con = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     ssl: {
-    ca: fs.readFileSync("./ca.pem"),
+   ca: fs.readFileSync("/etc/secrets/ca.pem"),
     rejectUnauthorized: true
 }
 })
