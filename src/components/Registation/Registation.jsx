@@ -64,7 +64,7 @@ async function handleFormSubmit(e){
      return;
    }
      try{   
-     const url="http://localhost:3000/api/users/register";
+     const url="https://contact-pro-qy1a.onrender.com/api/users/register";
      const res=await fetch(url,{
           method:"POST",
            headers: {

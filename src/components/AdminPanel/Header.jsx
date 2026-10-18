@@ -10,8 +10,9 @@ const usenavigate=useNavigate()
   useEffect(() => {
     async function getUser() {
       try {
+        
         const res = await fetch(
-          "http://localhost:3000/api/users/me",
+          " https://contact-pro-qy1a.onrender.com/api/users/me",
           { 
             method:"GET",
             credentials: "include" 
@@ -33,7 +34,7 @@ const usenavigate=useNavigate()
 async function handleLogout(){
   try {
         const res = await fetch(
-          "http://localhost:3000/api/users/logout",
+          " https://contact-pro-qy1a.onrender.com/api/users/logout",
           { 
             method:"GET",
             credentials: "include" 

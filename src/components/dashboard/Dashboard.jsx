@@ -14,7 +14,7 @@ const Dashboard = () => {
   useEffect(() => {
     async function fetchContacts() {
       try {
-        const url = "http://localhost:3000/api/contacts";
+        const url = "https://contact-pro-qy1a.onrender.com/api/contacts";
 
         const res = await fetch(url, {
           method: "GET",
@@ -56,7 +56,7 @@ const Dashboard = () => {
 
   async function deleteContact(Id) {
     try {
-      const url = `http://localhost:3000/api/contacts/delete/${Id}`;
+      const url = `https://contact-pro-qy1a.onrender.com/api/contacts/delete/${Id}`;
 
       const res = await fetch(url, {
         method: "delete",
@@ -178,71 +178,7 @@ const Dashboard = () => {
             ))}
           </div>
         )}
-
-
-
-
-
-
-        {/* {contacts.length === 0 ? (
-          <div className="empty-contacts">
-            <h3>No contacts yet</h3>
-            <p>Add your first contact to get started.</p>
-          </div>
-        ) : (
-          <div className="contacts-grid">
-            {contacts.map((contact) => (
-              <div className="contact-card" key={contact.id}>
-                <div className="card-top">
-                  <div className="contact-avatar">
-                    {contact.name.charAt(0).toUpperCase()}
-                  </div>
-
-                  <span className="contact-category">
-                    {contact.Category}
-                  </span>
-                </div>
-
-                <h3 className="contact-name">{contact.name}</h3>
-
-                <div className="contact-details">
-                  <p>
-                    <span>☎</span>
-                    {contact.phone}
-                  </p>
-
-                  <p>
-                    <span>⌖</span>
-                    {contact.address ===""? "none":contact.address }
-                    
-                  </p>
-
-                  <p>
-                    <span>⌂</span>
-                    {contact.city}
-                  </p>
-                </div>
-
-                <div className="card-actions">
-                  <button
-                    className="edit-btn"
-                    onClick={()=>updateContact(contact.id)}
-                  >
-                    Edit
-                  </button>
-
-                  <button
-                    className="delete-btn"
-                    onClick={()=>deleteContact(contact.id)}
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        )} */}
-
+  
       </main>
     </div>
   );
