@@ -33,7 +33,8 @@ app.post("/api/users/register", async (req, res) => {
         ),
             {
                 httpOnly: true,
-                sameSite: "lax",
+                    sameSite: "none",
+                    secure: true,
                 maxAge: 24 * 60 * 60 * 1000,
             })
 
@@ -71,7 +72,8 @@ app.post("/api/users/login", async (req, res) => {
         }),
         {
             httpOnly: true,
-            sameSite: "lax",
+                sameSite: "none",
+                secure: true,
             maxAge: 24 * 60 * 60 * 1000,
         }
     );
